@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Nunito', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbar for clean UI in horizontal lists */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animation utilities */
+.animate-in {
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.fade-in {
+  animation-name: fadeIn;
+}
+.slide-in-from-right-4 {
+  animation-name: slideInRight4;
+}
+.slide-in-from-right-8 {
+  animation-name: slideInRight8;
+}
+.slide-in-from-bottom-4 {
+  animation-name: slideInBottom4;
+}
+.slide-in-from-top-2 {
+  animation-name: slideInTop2;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInRight4 {
+  from { transform: translateX(1rem); }
+  to { transform: translateX(0); }
+}
+@keyframes slideInRight8 {
+  from { transform: translateX(2rem); }
+  to { transform: translateX(0); }
+}
+@keyframes slideInBottom4 {
+  from { transform: translateY(1rem); }
+  to { transform: translateY(0); }
+}
+@keyframes slideInTop2 {
+  from { transform: translateY(-0.5rem); }
+  to { transform: translateY(0); }
+}

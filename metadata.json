@@ -1,0 +1,7 @@
+{
+  "name": "Neighborhood Playdate",
+  "description": "A safe and simple way for parents to coordinate playdates, find local activities, and connect with nearby families.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
